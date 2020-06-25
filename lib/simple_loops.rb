@@ -1,5 +1,6 @@
 def loop_message_five_times(string)
   counter = 0
+
   while counter < 5 do
     puts string
     counter += 1
@@ -19,15 +20,16 @@ end
 def output_array(array)
   counter = 0
   while counter < array.length do
-    puts counter[counter]
+    puts array[counter]
     counter += 1
   end
 end
 
 def return_string_array(array)
+  new_array = []
   counter = 0
   while counter < array.length do
-    p array[counter]
+    new_array.push(array[counter])
     counter += 1
   end
   p new_array
